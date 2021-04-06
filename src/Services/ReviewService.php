@@ -10,7 +10,7 @@ class ReviewService
 
     public function __construct()
     {
-        $this->redisClient = new Client('tcp://51.195.148.42:6379');
+        $this->redisClient = new Client();
     }
 
     public function clearCache($productId = -1)
